@@ -1,1 +1,1 @@
-# App Creada con React para consumir una api de peliculas 
+# App Creada con React para consumir una api de peliculas con Context
