@@ -3,22 +3,15 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link, Navigate } from "react-router-dom";
 import swal from 'sweetalert';
-import {actionType } from "../reducer/reducer"
-import { useStateValue } from '../reducer/StateProvider';
+
+
 
 
 const Resultados = (props) => {
-
-  const[{filterMovies, movies}, dispatch] = useStateValue();
-
-  
-
-
-  
+ 
     let query = new URLSearchParams(window.location.search);
     let keyword = query.get('keyword');
-
-    
+   
 
     const[moviesResult, setMovieResult] = useState([]);
 
