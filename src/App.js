@@ -13,6 +13,7 @@ import Generos from "./componentes/Generos";
 import swal from 'sweetalert';
 import axios from 'axios';
 import "./App.css"
+import Register from "./componentes/register/Register";
 
 
 function App() { 
@@ -97,7 +98,8 @@ function App() {
     <Header favoritos={favoritos} />
       <div className="container">
           <Routes>
-            <Route exact path="/" element={<Login />} />     
+            <Route  exact path="/" element={ <Register/> }  />
+            <Route path="/login" element={<Login />} />  
             <Route path="/listado"  element={  <Listado addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
             <Route path="/detalle"  element={<Detalle />} />
             <Route path="/resultados"  element={<Resultados addOrRemoveFromFavs={addOrRemoveFromFavs}  />} />
