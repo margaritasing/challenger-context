@@ -1,5 +1,6 @@
 export const inicialState = {
-    movies:[],    
+    movies:[],   
+    user:null, 
     filterMovies: [],
     filterGenero: [],
 
@@ -10,6 +11,7 @@ export const inicialState = {
 
 export const actionType={
     MOVIES:"MOVIES",
+    USER:"USER",
     FILTERGENERO:"FILTERGENERO",
     FILTER:"FILTER"
 }
@@ -29,6 +31,11 @@ const reducer=(state, action)=>{
             filterMovies:action.movies
         }
 
+        case "USER":
+            return{
+                ...state,
+                user: action.user
+            }
 
         case "FILTER":
             const filterMovies = state.movies.filter( movie => movie.title.toLowerCase().startsWith(action.value.value.toLowerCase().trim()))          
