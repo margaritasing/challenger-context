@@ -3,7 +3,6 @@ import { BrowserRouter,Routes, Route } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import  { actionType } from './reducer/reducer'
 import { useStateValue } from "./reducer/StateProvider";
-import Login from './componentes/Login';
 import Listado from "./componentes/Listado";
 import Header from "./componentes/Header";
 import Detalle from "./componentes/Detalle";
@@ -14,6 +13,7 @@ import swal from 'sweetalert';
 import axios from 'axios';
 import "./App.css"
 import Register from "./componentes/register/Register";
+import Login from "./componentes/login/Login";
 
 
 function App() { 
@@ -99,7 +99,7 @@ function App() {
       <div className="container">
           <Routes>
             <Route  exact path="/" element={ <Register/> }  />
-            <Route path="/login" element={<Login />} />  
+            <Route path="/login" element={<Login /> } />       
             <Route path="/listado"  element={  <Listado addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
             <Route path="/detalle"  element={<Detalle />} />
             <Route path="/resultados"  element={<Resultados addOrRemoveFromFavs={addOrRemoveFromFavs}  />} />
