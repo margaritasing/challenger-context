@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+.afl-container {
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 544px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 55px;
+    background-color: #A85CF9;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.form-login-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 432px;
+}
+
+@media (max-width: 600px) {
+    .form-login-container {
+        width: 400px;
+    }
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-title {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+
+.form-body {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.form-inputs-container {
+    margin-top: 37px;
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px
+}
+
+.form-input {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    height: 52px;
+    font-size: 16px;
+    padding: 13px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.form-login__button--send {
+    width: 100%;
+    padding: 14px;
+    color: white;
+    background-color: #5534A5;
+
+    border: none;
+    margin-top: 23px;
+    margin-bottom: 28px;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+.form-login__button--send:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 280px) and (max-width: 980px) {
+    .afl-container {
+
+        width: 100%;
+
+    }
+}
